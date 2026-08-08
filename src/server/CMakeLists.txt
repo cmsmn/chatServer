@@ -5,4 +5,7 @@ aux_source_directory(. SRC_LIST)
 add_executable(ChatServer ${SRC_LIST})
 
 #指定可执行文件依赖的库文件
-target_link_libraries(ChatServer /home/cmsmn/project/mymuduo/lib/statbilmyMuduo.a pthread)
+target_link_libraries(ChatServer 
+	/home/cmsmn/project/mymuduo/lib/statbilmyMuduo.a 
+	mysqlclient  
+	pthread)

@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/ChatServer.dir/chatServer.cpp.o CMakeFiles/ChatServer.dir/main.cpp.o -o /home/cmsmn/project/Cluster_chat_server/bin/ChatServer  /home/cmsmn/project/mymuduo/lib/statbilmyMuduo.a -lpthread
+/usr/bin/c++ -g CMakeFiles/ChatServer.dir/chatServer.cpp.o CMakeFiles/ChatServer.dir/chatService.cpp.o CMakeFiles/ChatServer.dir/main.cpp.o -o /home/cmsmn/project/Cluster_chat_server/bin/ChatServer   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql /home/cmsmn/project/mymuduo/lib/statbilmyMuduo.a -lmysqlclient -lpthread

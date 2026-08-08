@@ -86,10 +86,24 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/chatServer.cpp.s"
 	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmsmn/project/Cluster_chat_server/src/server/chatServer.cpp -o CMakeFiles/ChatServer.dir/chatServer.cpp.s
 
+src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o: src/server/CMakeFiles/ChatServer.dir/flags.make
+src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o: /home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp
+src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o: src/server/CMakeFiles/ChatServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cmsmn/project/Cluster_chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o"
+	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o -MF CMakeFiles/ChatServer.dir/chatService.cpp.o.d -o CMakeFiles/ChatServer.dir/chatService.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp
+
+src/server/CMakeFiles/ChatServer.dir/chatService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ChatServer.dir/chatService.cpp.i"
+	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp > CMakeFiles/ChatServer.dir/chatService.cpp.i
+
+src/server/CMakeFiles/ChatServer.dir/chatService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ChatServer.dir/chatService.cpp.s"
+	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp -o CMakeFiles/ChatServer.dir/chatService.cpp.s
+
 src/server/CMakeFiles/ChatServer.dir/main.cpp.o: src/server/CMakeFiles/ChatServer.dir/flags.make
 src/server/CMakeFiles/ChatServer.dir/main.cpp.o: /home/cmsmn/project/Cluster_chat_server/src/server/main.cpp
 src/server/CMakeFiles/ChatServer.dir/main.cpp.o: src/server/CMakeFiles/ChatServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cmsmn/project/Cluster_chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/server/CMakeFiles/ChatServer.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cmsmn/project/Cluster_chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/server/CMakeFiles/ChatServer.dir/main.cpp.o"
 	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/ChatServer.dir/main.cpp.o -MF CMakeFiles/ChatServer.dir/main.cpp.o.d -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/main.cpp
 
 src/server/CMakeFiles/ChatServer.dir/main.cpp.i: cmake_force
@@ -103,17 +117,19 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.s: cmake_force
 # Object files for target ChatServer
 ChatServer_OBJECTS = \
 "CMakeFiles/ChatServer.dir/chatServer.cpp.o" \
+"CMakeFiles/ChatServer.dir/chatService.cpp.o" \
 "CMakeFiles/ChatServer.dir/main.cpp.o"
 
 # External object files for target ChatServer
 ChatServer_EXTERNAL_OBJECTS =
 
 /home/cmsmn/project/Cluster_chat_server/bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.o
+/home/cmsmn/project/Cluster_chat_server/bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o
 /home/cmsmn/project/Cluster_chat_server/bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/main.cpp.o
 /home/cmsmn/project/Cluster_chat_server/bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/build.make
 /home/cmsmn/project/Cluster_chat_server/bin/ChatServer: /home/cmsmn/project/mymuduo/lib/statbilmyMuduo.a
 /home/cmsmn/project/Cluster_chat_server/bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cmsmn/project/Cluster_chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/cmsmn/project/Cluster_chat_server/bin/ChatServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cmsmn/project/Cluster_chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/cmsmn/project/Cluster_chat_server/bin/ChatServer"
 	cd /home/cmsmn/project/Cluster_chat_server/build/src/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ChatServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

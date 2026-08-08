@@ -1,11 +1,12 @@
 #include "chatServer.h"
 #include "json.hpp"
-
+#include "chatService.h"
 
 #include <functional>
 
 using json = nlohmann::json; 
 
+//构造函数
 ChatServer::ChatServer(EventLoop *loop
 		,const InetAddress &addr
 		,const std::string &name
@@ -27,7 +28,8 @@ ChatServer::ChatServer(EventLoop *loop
 	
 	server_.setThreadNum(threadNum);	
 }
- 
+
+ //上报联系相关信息的回调函数
 void ChatServer::onConnection(const TcpConnectionPtr &conn)
 {
 	if(conn->connected())
@@ -41,6 +43,7 @@ void ChatServer::onConnection(const TcpConnectionPtr &conn)
 	} 
 }
 
+//上报读写事件相关信息的回调函数
 void ChatServer::onMessage(const TcpConnectionPtr &conn
 		,Buffer *buffer
 		,Timestamp time)
@@ -51,4 +54,6 @@ void ChatServer::onMessage(const TcpConnectionPtr &conn
 	json js = json::parse(buf);
 	//达到的目的完全解耦网络模块的代码和业务代码
 	//js["msgid"]获取->业务handler->conn js time 
+	auto magHandler = ChatService::instance()->getMsgHandler(js["msgid"].get<int>());
+	magHandler(conn, js, time);
 }

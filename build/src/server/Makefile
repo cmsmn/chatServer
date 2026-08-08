@@ -154,6 +154,30 @@ chatServer.cpp.s:
 	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.s
 .PHONY : chatServer.cpp.s
 
+chatService.o: chatService.cpp.o
+.PHONY : chatService.o
+
+# target to build an object file
+chatService.cpp.o:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o
+.PHONY : chatService.cpp.o
+
+chatService.i: chatService.cpp.i
+.PHONY : chatService.i
+
+# target to preprocess a source file
+chatService.cpp.i:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cpp.i
+.PHONY : chatService.cpp.i
+
+chatService.s: chatService.cpp.s
+.PHONY : chatService.s
+
+# target to generate assembly for a file
+chatService.cpp.s:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatService.cpp.s
+.PHONY : chatService.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -190,6 +214,9 @@ help:
 	@echo "... chatServer.o"
 	@echo "... chatServer.i"
 	@echo "... chatServer.s"
+	@echo "... chatService.o"
+	@echo "... chatService.i"
+	@echo "... chatService.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
