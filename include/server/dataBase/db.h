@@ -53,7 +53,7 @@ public:
 	}
 	
 	//更新操作
-	bool updata(std::string sql)
+	bool update(std::string sql)
 	{
 		if(mysql_query(conn_, sql.c_str()))
 		{
