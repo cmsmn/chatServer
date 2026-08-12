@@ -38,6 +38,8 @@ void ChatServer::onConnection(const TcpConnectionPtr &conn)
 	}
 	else
 	{
+		//客户端异常退出处理
+		ChatService::instance()->clientCloseException(conn);
 		//连接失败直接回收fd
 		conn->shutdown();
 	} 
@@ -51,6 +53,7 @@ void ChatServer::onMessage(const TcpConnectionPtr &conn
 	//从缓冲区读取数据放进字符串
 	std::string buf = buffer->retrieveAllAsString();
 	//数据的反序列化
+	std::cout << buf << std::endl; ;
 	json js = json::parse(buf);
 	//达到的目的完全解耦网络模块的代码和业务代码
 	//js["msgid"]获取->业务handler->conn js time 

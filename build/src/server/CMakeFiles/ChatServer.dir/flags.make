@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DOUTPUT_INFO
 
-CXX_INCLUDES = -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile
+CXX_INCLUDES = -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g -g -std=gnu++17
 

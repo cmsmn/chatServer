@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -g CMakeFiles/ClientServer.dir/main.cpp.o -o /home/cmsmn/project/Cluster_chat_server/bin/ClientServer   -L/usr/lib64/mysql  -Wl,-rpath,/usr/lib64/mysql -lpthread

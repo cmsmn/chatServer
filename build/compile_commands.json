@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/chatServer.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/chatServer.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/chatServer.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/chatService.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/chatService.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/main.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/main.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/main.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/model/friendModel.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/model/friendModel.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/model/friendModel.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/friendModel.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/model/groupModel.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/model/groupModel.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/model/groupModel.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/groupModel.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/model/offlineMessageModel.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/model/offlineMessageModel.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/server",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ChatServer.dir/model/userModel.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/server/model/userModel.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/server/model/userModel.cpp",
+  "output": "src/server/CMakeFiles/ChatServer.dir/model/userModel.cpp.o"
+},
+{
+  "directory": "/home/cmsmn/project/Cluster_chat_server/build/src/client",
+  "command": "/usr/bin/c++ -DOUTPUT_INFO -I/home/cmsmn/project/Cluster_chat_server/include -I/home/cmsmn/project/Cluster_chat_server/include/server -I/home/cmsmn/project/Cluster_chat_server/include/server/dataBase -I/home/cmsmn/project/Cluster_chat_server/include/server/model -I/home/cmsmn/project/Cluster_chat_server/thridParty -I/home/cmsmn/project/mymuduo/coreFile -g -g -std=gnu++17 -o CMakeFiles/ClientServer.dir/main.cpp.o -c /home/cmsmn/project/Cluster_chat_server/src/client/main.cpp",
+  "file": "/home/cmsmn/project/Cluster_chat_server/src/client/main.cpp",
+  "output": "src/client/CMakeFiles/ClientServer.dir/main.cpp.o"
+}
+]

@@ -236,4 +236,23 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.o: \
  /usr/include/c++/11/bits/mask_array.h \
  /usr/include/c++/11/bits/indirect_array.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/chatService.h \
- /home/cmsmn/project/mymuduo/coreFile/tcpConnection.h
+ /home/cmsmn/project/mymuduo/coreFile/tcpConnection.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/userModel.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/offlineMessageModel.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/dataBase/db.h \
+ /usr/include/mysql/mysql.h \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/stdbool.h \
+ /usr/include/mysql/field_types.h /usr/include/mysql/my_list.h \
+ /usr/include/mysql/mysql_com.h /usr/include/mysql/my_command.h \
+ /usr/include/mysql/my_compress.h \
+ /usr/include/mysql/mysql/udf_registration_types.h \
+ /usr/include/mysql/mysql/client_plugin.h /usr/include/c++/11/stdlib.h \
+ /usr/include/mysql/mysql/plugin_auth_common.h \
+ /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_time.h \
+ /usr/include/mysql/errmsg.h /home/cmsmn/project/mymuduo/coreFile/log.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/firendModel.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/groupModel.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/group.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h

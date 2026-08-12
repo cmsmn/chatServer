@@ -3,7 +3,6 @@
 
 #include <mysql/mysql.h>
 #include <string>
-
 #include "log.h"
 
 static std::string server = "127.0.0.1";
@@ -57,7 +56,7 @@ public:
 	{
 		if(mysql_query(conn_, sql.c_str()))
 		{
-			LOG_ERROR("%s 语句 查询失败", sql.c_str());
+			LOG_ERROR("%s 语句 更新失败", sql.c_str());
 			return false;
 		}
 		return true;

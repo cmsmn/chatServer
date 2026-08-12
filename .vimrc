@@ -1,1 +1,1 @@
-set path+=/home/cmsmn/project/Cluster_chat_server/include/**,/home/cmsmn/project/Cluster_chat_server/thridPartyset
+set path+=/home/cmsmn/project/Cluster_chat_server/include/**,/home/cmsmn/project/Cluster_chat_server/thridPartyset,/home/cmsmn/project/Cluster_chat_server/include/model

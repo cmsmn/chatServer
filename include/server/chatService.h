@@ -6,6 +6,8 @@
 #include "json.hpp"
 #include "userModel.h"
 #include "offlineMessageModel.h"
+#include "firendModel.h"
+#include "groupModel.h"
 
 #include <unordered_map>
 #include <functional>
@@ -33,9 +35,28 @@ public:
 	//一对一聊天业务
 	void oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time);
 
+	//添加好友业务
+	void addFriend(const TcpConnectionPtr &conn, json &js, Timestamp time);
+	
+	//创建群组业务
+	void creadteGroup(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+	//加入群组业务
+	void addGroup(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+	//群组聊天业务
+	void groupChat(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+	//退出业务
+	void loginout(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
 	//获取消息处理器
 	MsgHandler getMsgHandler(int msgId);
+
+	//服务器异常 业务重置方法
+	void reset();
 	
+	//处理用户异常退出	
 	void clientCloseException(const TcpConnectionPtr &conn);
 private:
 	//单例构造函数注册消息以及对应的回调操作
@@ -51,8 +72,13 @@ private:
 	std::mutex connMutex_;
 	
 	//数据操作类对象
+	//用户信息操作对象
 	UserModel userModel_;
-	//离线消息存储
+	//好友信息操作对象
+	FriendModel friendModel_;
+	//群组信息操作对象
+	GroupModel groupModel_;
+	//离线信息存储
 	OfflineMsgModel offlineMsgModel_;
 	
 };

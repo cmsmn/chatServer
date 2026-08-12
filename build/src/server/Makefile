@@ -202,6 +202,102 @@ main.cpp.s:
 	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/friendModel.o: model/friendModel.cpp.o
+.PHONY : model/friendModel.o
+
+# target to build an object file
+model/friendModel.cpp.o:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/friendModel.cpp.o
+.PHONY : model/friendModel.cpp.o
+
+model/friendModel.i: model/friendModel.cpp.i
+.PHONY : model/friendModel.i
+
+# target to preprocess a source file
+model/friendModel.cpp.i:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/friendModel.cpp.i
+.PHONY : model/friendModel.cpp.i
+
+model/friendModel.s: model/friendModel.cpp.s
+.PHONY : model/friendModel.s
+
+# target to generate assembly for a file
+model/friendModel.cpp.s:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/friendModel.cpp.s
+.PHONY : model/friendModel.cpp.s
+
+model/groupModel.o: model/groupModel.cpp.o
+.PHONY : model/groupModel.o
+
+# target to build an object file
+model/groupModel.cpp.o:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupModel.cpp.o
+.PHONY : model/groupModel.cpp.o
+
+model/groupModel.i: model/groupModel.cpp.i
+.PHONY : model/groupModel.i
+
+# target to preprocess a source file
+model/groupModel.cpp.i:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupModel.cpp.i
+.PHONY : model/groupModel.cpp.i
+
+model/groupModel.s: model/groupModel.cpp.s
+.PHONY : model/groupModel.s
+
+# target to generate assembly for a file
+model/groupModel.cpp.s:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupModel.cpp.s
+.PHONY : model/groupModel.cpp.s
+
+model/offlineMessageModel.o: model/offlineMessageModel.cpp.o
+.PHONY : model/offlineMessageModel.o
+
+# target to build an object file
+model/offlineMessageModel.cpp.o:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.o
+.PHONY : model/offlineMessageModel.cpp.o
+
+model/offlineMessageModel.i: model/offlineMessageModel.cpp.i
+.PHONY : model/offlineMessageModel.i
+
+# target to preprocess a source file
+model/offlineMessageModel.cpp.i:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.i
+.PHONY : model/offlineMessageModel.cpp.i
+
+model/offlineMessageModel.s: model/offlineMessageModel.cpp.s
+.PHONY : model/offlineMessageModel.s
+
+# target to generate assembly for a file
+model/offlineMessageModel.cpp.s:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.s
+.PHONY : model/offlineMessageModel.cpp.s
+
+model/userModel.o: model/userModel.cpp.o
+.PHONY : model/userModel.o
+
+# target to build an object file
+model/userModel.cpp.o:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/userModel.cpp.o
+.PHONY : model/userModel.cpp.o
+
+model/userModel.i: model/userModel.cpp.i
+.PHONY : model/userModel.i
+
+# target to preprocess a source file
+model/userModel.cpp.i:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/userModel.cpp.i
+.PHONY : model/userModel.cpp.i
+
+model/userModel.s: model/userModel.cpp.s
+.PHONY : model/userModel.s
+
+# target to generate assembly for a file
+model/userModel.cpp.s:
+	cd /home/cmsmn/project/Cluster_chat_server/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/userModel.cpp.s
+.PHONY : model/userModel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +316,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/friendModel.o"
+	@echo "... model/friendModel.i"
+	@echo "... model/friendModel.s"
+	@echo "... model/groupModel.o"
+	@echo "... model/groupModel.i"
+	@echo "... model/groupModel.s"
+	@echo "... model/offlineMessageModel.o"
+	@echo "... model/offlineMessageModel.i"
+	@echo "... model/offlineMessageModel.s"
+	@echo "... model/userModel.o"
+	@echo "... model/userModel.i"
+	@echo "... model/userModel.s"
 .PHONY : help
 
 
