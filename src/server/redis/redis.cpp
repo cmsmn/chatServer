@@ -81,7 +81,7 @@ bool Redis::subscribe(int channel)
     int done = 0;
     while (!done)
     {
-        if(REDIS_ERR == s(subcribeContext_, &done))
+        if(REDIS_ERR == redisBufferWrite(subcribeContext_, &done))
         {
             std::cerr << "subscribe  command failed" << std::endl;
             return false;
