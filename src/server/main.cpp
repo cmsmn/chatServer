@@ -11,13 +11,13 @@ void resetHandler(int)
 	exit(0);
 }
 
-int main()
+int main(int argc,char **argv)
 {
 
 	signal(SIGINT, resetHandler);
 
 	EventLoop loop;
-	InetAddress addr(4321);
+	InetAddress addr(argv[1],atoi(argv[2]));
 	ChatServer server(&loop, addr, "chatServer", 4);
 	server.start();
 	loop.loop();

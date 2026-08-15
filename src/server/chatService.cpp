@@ -79,6 +79,12 @@ ChatService::ChatService()
 		,std::placeholders::_1
 		,std::placeholders::_2
 		,std::placeholders::_3)});
+
+	if(redis_.connect())
+	{
+		std::cout<<"text connect"<<std::endl;
+		redis_.initNotifyHandler(std::bind(&ChatService::handleRedisSubscribeMessage, this, std::placeholders::_1, std::placeholders::_2));
+	}
 	
 }
 
@@ -137,6 +143,9 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
 				userConnMap_.insert({id, conn});
 			}
 			
+			//用户成功登录后 向redis订阅channel(id)
+			redis_.subscribe(id);
+
 			//返回用户消息
 			response["msgid"] = LOGIN_MSG_ACK;
 			response["error"] = 0;
@@ -246,7 +255,6 @@ void ChatService::reg(const TcpConnectionPtr &conn, json &js, Timestamp time)
 void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time)
 {
 	// json fromid fromName toid msg
-
 	int toId = js["toid"].get<int>();
 	{
 		std::lock_guard<std::mutex> lock(connMutex_);
@@ -256,9 +264,16 @@ void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time
 			//服务器从连接容器找到toid的连接 然后推送msg
 			//要通过conn转发所以要保证线程安全
 			//有粘包问题
-			it->second->send(js.dump() + "\n");
+			it->second->send(js.dump());
 			return;
 		}
+	}
+	//判断是不是在另一个主机上
+	User user = userModel_.query(toId);
+	if(user.getState() == "online")
+	{
+		redis_.publish(toId, js.dump());
+		return;
 	}
 	//toid不在线 存储离线信息
 	offlineMsgModel_.insert(toId, js.dump());
@@ -322,7 +337,18 @@ void ChatService::groupChat(const TcpConnectionPtr &conn, json &js, Timestamp ti
 			}
 			else
 			{
-				offlineMsgModel_.insert(id, js.dump());
+				//判断是不是在另一个主机上
+				User user = userModel_.query(id);
+				if(user.getState() == "online")
+				{
+					redis_.publish(id, js.dump());
+					return;
+				}
+				else
+				{
+					//toid不在线 存储离线信息
+					offlineMsgModel_.insert(id, js.dump());
+				}
 			}
 		}
 	}
@@ -340,6 +366,9 @@ void ChatService::loginout(const TcpConnectionPtr &conn, json &js, Timestamp tim
 			userConnMap_.erase(it);
 		}
 	}
+	//用户注销就不在关注redis的用户事件
+	redis_.unsubscribe(userId);
+
 	User user;
 	user.setId(userId);
 	user.setStateBool(false);
@@ -363,6 +392,10 @@ void ChatService::clientCloseException(const TcpConnectionPtr &conn)
 			}
 		}
 	}
+
+	//用户注销就不在关注redis的用户事件
+	redis_.unsubscribe(user.getId());
+
 	//更新用户的状态信息
 	if(user.getId() != -1)
 	{
@@ -377,7 +410,21 @@ void ChatService::reset()
 	userModel_.resetState();
 }
 
-
+//从redis消息队列中获取订阅的消息
+void ChatService::handleRedisSubscribeMessage(int userid, std::string msg)
+{
+	std::lock_guard<std::mutex> lock(connMutex_);
+	auto it = userConnMap_.find(userid);
+	if(it != userConnMap_.end())
+	{
+		//服务器从连接容器找到toid的连接 然后推送msg
+		//要通过conn转发所以要保证线程安全
+		//有粘包问题
+		it->second->send(msg);
+		return;
+	}
+	offlineMsgModel_.insert(userid, msg);
+}
 
 
 

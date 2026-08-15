@@ -204,7 +204,7 @@ int main(int argc, char **argv)
 						//登录成功 启动接受线程负责接受数据
 						//防止线程多次创建 
 						static int threadNumber = 0;
-						if(threadNumber > 1)
+						if(threadNumber < 1)
 						{
 							std::thread readTask(readTaskHandler, clientFd);//创建线程
 							readTask.detach();//设置分离线程
@@ -550,10 +550,12 @@ std::string getCurrentTime()
     return std::string(date);
 }
 
+MessageProtocol::Unpacker unpack;
+
 //接收数据线程
 void readTaskHandler(int clientFd)
 {
-	//std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" << std::endl;
+	std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" << std::endl;
 	//线程recv堵塞导致线程释放不了 
 	//多次登录导致线程多次创建
 	//解决方法线程创建一次就行
@@ -566,8 +568,6 @@ void readTaskHandler(int clientFd)
 			close(clientFd);
 			exit(-1);
 		}
-
-		std::cout << buffer << std::endl;
 
 		json js = json::parse(buffer);
 		int msgType = js["msgid"].get<int>();

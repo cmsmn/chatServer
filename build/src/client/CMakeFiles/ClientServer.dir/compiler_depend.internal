@@ -3,10 +3,10 @@
 
 src/client/CMakeFiles/ClientServer.dir/main.cpp.o
  /home/cmsmn/project/Cluster_chat_server/src/client/main.cpp
+ /home/cmsmn/project/Cluster_chat_server/include/public.h
  /home/cmsmn/project/Cluster_chat_server/include/server/model/group.h
  /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h
  /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h
- /home/cmsmn/project/Cluster_chat_server/include/server/public.h
  /home/cmsmn/project/Cluster_chat_server/thridParty/json.hpp
  /usr/include/alloca.h
  /usr/include/arpa/inet.h

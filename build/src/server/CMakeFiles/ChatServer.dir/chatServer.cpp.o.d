@@ -255,4 +255,10 @@ src/server/CMakeFiles/ChatServer.dir/chatServer.cpp.o: \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/groupModel.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/group.h \
- /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h
+ /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h \
+ /home/cmsmn/project/Cluster_chat_server/include/server/redis/redis.h \
+ /usr/local/include/hiredis/hiredis.h /usr/local/include/hiredis/read.h \
+ /usr/include/sys/time.h /usr/local/include/hiredis/sds.h \
+ /usr/local/include/hiredis/alloc.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h

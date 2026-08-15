@@ -19,11 +19,13 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 include_directories(${PROJECT_SOURCE_DIR}/include/server)
 include_directories(${PROJECT_SOURCE_DIR}/include/server/dataBase)
 include_directories(${PROJECT_SOURCE_DIR}/include/server/model)
+include_directories(${PROJECT_SOURCE_DIR}/include/server/redis)
 include_directories(${PROJECT_SOURCE_DIR}/thridParty)
 include_directories(/home/cmsmn/project/mymuduo/coreFile)
 
 #配置库文件搜索路径
 link_directories(/usr/lib64/mysql)
+link_directories(/usr/local/lib)
 
 # 加载子目录
 add_subdirectory(src)

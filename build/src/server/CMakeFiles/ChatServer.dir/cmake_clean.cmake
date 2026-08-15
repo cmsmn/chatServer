@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ChatServer.dir/model/offlineMessageModel.cpp.o.d"
   "CMakeFiles/ChatServer.dir/model/userModel.cpp.o"
   "CMakeFiles/ChatServer.dir/model/userModel.cpp.o.d"
+  "CMakeFiles/ChatServer.dir/redis/redis.cpp.o"
+  "CMakeFiles/ChatServer.dir/redis/redis.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

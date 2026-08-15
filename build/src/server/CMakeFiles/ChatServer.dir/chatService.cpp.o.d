@@ -235,12 +235,17 @@ src/server/CMakeFiles/ChatServer.dir/chatService.cpp.o: \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/groupModel.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/group.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h \
- /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
+ /home/cmsmn/project/Cluster_chat_server/include/server/redis/redis.h \
+ /usr/local/include/hiredis/hiredis.h /usr/local/include/hiredis/read.h \
+ /usr/include/sys/time.h /usr/local/include/hiredis/sds.h \
+ /usr/local/include/hiredis/alloc.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/cmsmn/project/Cluster_chat_server/include/server/public.h \
+ /home/cmsmn/project/Cluster_chat_server/include/public.h \
+ /usr/include/arpa/inet.h /usr/include/c++/11/iostream \
  /home/cmsmn/project/mymuduo/coreFile/timestamp.h \
- /home/cmsmn/project/mymuduo/coreFile/copyable.h \
- /usr/include/c++/11/iostream
+ /home/cmsmn/project/mymuduo/coreFile/copyable.h

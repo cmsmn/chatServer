@@ -8,6 +8,7 @@
 #include "offlineMessageModel.h"
 #include "firendModel.h"
 #include "groupModel.h"
+#include "redis.h"
 
 #include <unordered_map>
 #include <functional>
@@ -58,6 +59,10 @@ public:
 	
 	//处理用户异常退出	
 	void clientCloseException(const TcpConnectionPtr &conn);
+
+	//从redis消息队列中获取订阅的消息
+	void handleRedisSubscribeMessage(int userid, std::string msg);
+	
 private:
 	//单例构造函数注册消息以及对应的回调操作
 	ChatService();
@@ -81,6 +86,8 @@ private:
 	//离线信息存储
 	OfflineMsgModel offlineMsgModel_;
 	
+	//redis操作对象
+	Redis redis_;
 };
 
 

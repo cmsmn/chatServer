@@ -204,7 +204,14 @@ src/client/CMakeFiles/ClientServer.dir/main.cpp.o: \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/groupUser.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h \
  /home/cmsmn/project/Cluster_chat_server/include/server/model/user.h \
- /home/cmsmn/project/Cluster_chat_server/include/server/public.h \
+ /home/cmsmn/project/Cluster_chat_server/include/public.h \
+ /usr/include/arpa/inet.h /usr/include/netinet/in.h \
+ /usr/include/sys/socket.h /usr/include/bits/types/struct_iovec.h \
+ /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
@@ -213,10 +220,4 @@ src/client/CMakeFiles/ClientServer.dir/main.cpp.o: \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/sys/socket.h \
- /usr/include/bits/types/struct_iovec.h /usr/include/bits/socket.h \
- /usr/include/bits/socket_type.h /usr/include/bits/sockaddr.h \
- /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
- /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/types/struct_osockaddr.h /usr/include/netinet/in.h \
- /usr/include/bits/in.h /usr/include/arpa/inet.h
+ /usr/include/linux/close_range.h
